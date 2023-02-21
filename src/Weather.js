@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 
 const Weather = () => {
   const [weatherData, setWeatherData] = useState();
+  //podmienić wartość API_KEY na wygenerowany klucz na stronie: openweathermap.org
   const API_KEY = process.env.REACT_APP_WEATHER_API_KEY;
 
   useEffect(() => {
