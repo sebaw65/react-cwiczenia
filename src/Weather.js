@@ -14,7 +14,7 @@ const Weather = () => {
       lon = `19.0275`;
 
     const data = await fetch(
-      `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${process.env.REACT_APP_WEATHER_API_KEY}&units=metric`
+      `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric`
     );
     const dataJson = await data.json();
     setWeatherData(dataJson);
